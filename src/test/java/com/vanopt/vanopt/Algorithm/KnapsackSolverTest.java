@@ -1,6 +1,7 @@
 package com.vanopt.vanopt.Algorithm;
 
 import com.vanopt.vanopt.DTO.ShipmentDto;
+import com.vanopt.vanopt.Service.Algorithm.KnapsackSolver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

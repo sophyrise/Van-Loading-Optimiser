@@ -1,4 +1,4 @@
-package com.vanopt.vanopt.Algorithm;
+package com.vanopt.vanopt.Service.Algorithm;
 
 import com.vanopt.vanopt.DTO.ShipmentDto;
 import org.springframework.stereotype.Component;
