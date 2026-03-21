@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 @Component
 public class OptimizationMapper {
-    public OptimizationRecord recordDtoToRequest(OptimizationRequestDto requestDto,
+    public OptimizationRecord requestDtoToRecord(OptimizationRequestDto requestDto,
                                                   List<ShipmentDto> selected) {
         OptimizationRecord record = new OptimizationRecord();
         record.setMaxVolume(requestDto.maxVolume());

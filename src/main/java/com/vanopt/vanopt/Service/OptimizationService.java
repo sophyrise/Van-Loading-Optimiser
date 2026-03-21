@@ -39,7 +39,7 @@ public class OptimizationService {
         List<ShipmentDto> selectedShipments = knapsackSolver.knapsack(
                 requestDto.availableShipments(), requestDto.maxVolume());
 
-        OptimizationRecord record = mapper.recordDtoToRequest(
+        OptimizationRecord record = mapper.requestDtoToRecord(
                 requestDto, selectedShipments);
         OptimizationRecord saved = repository.save(record);
 
