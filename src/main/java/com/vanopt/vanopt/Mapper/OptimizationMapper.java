@@ -8,6 +8,7 @@ import com.vanopt.vanopt.Entity.Shipment;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -34,7 +35,7 @@ public class OptimizationMapper {
                     return shipment;
                 })
                 .toList();
-        record.setShipments(shipments);
+        record.setShipments(new ArrayList<>(shipments));
         return record;
     }
     public OptimizationResponseDto recordToResponseDto(OptimizationRecord record) {
